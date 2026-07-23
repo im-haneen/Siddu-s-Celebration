@@ -126,7 +126,7 @@
      <a href="https://youtu.be/pDGIrorbxm8" target="_blank" class="venue-link">
  song for you
 </a>
-    <p>so proud of just like always🥳</p>
+    <p>so proud of u just like always🥳</p>
     <p>you will always be the best player that I have ever know ✨.</p>
     <p>From:HANEEN ❤️.</p>
     
@@ -135,13 +135,6 @@
       <img src="8affb87c-193b-4447-a24f-99eded6bf17f-fullsize.webp" alt="Siddharth 3D Photo" class="invite-img" />
     </div>
 
-    <!-- Countdown -->
-    <div class="countdown">
-      <div><span id="days">00</span><br/>Days</div>
-      <div><span id="hours">00</span><br/>Hours</div>
-      <div><span id="minutes">00</span><br/>Minutes</div>
-      <div><span id="seconds">00</span><br/>Seconds</div>
-    </div>
   </div>
 
   <!-- Footer -->
@@ -150,26 +143,7 @@
   </footer>
 
   <script>
-    // Countdown
-    const targetDate = new Date("Sep 11, 2025 00:00:00").getTime();
-    const daysEl=document.getElementById("days");
-    const hoursEl=document.getElementById("hours");
-    const minutesEl=document.getElementById("minutes");
-    const secondsEl=document.getElementById("seconds");
-
-    setInterval(()=>{
-      const now = new Date().getTime();
-      const diff = targetDate - now;
-      const days = Math.floor(diff/(1000*60*60*24));
-      const hours = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-      const minutes = Math.floor((diff%(1000*60*60))/(1000*60));
-      const seconds = Math.floor((diff%(1000*60))/1000);
-      daysEl.innerText = days.toString().padStart(2,'0');
-      hoursEl.innerText = hours.toString().padStart(2,'0');
-      minutesEl.innerText = minutes.toString().padStart(2,'0');
-      secondsEl.innerText = seconds.toString().padStart(2,'0');
-    },1000);
-
+ 
     // Confetti with different shapes
     function createConfetti(){
       const colors=['#ff0','#0ff','#f0f','#0f0','#f00','#00f','#ff6b6b','#ffd93d'];
